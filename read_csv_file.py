@@ -1,7 +1,7 @@
 import tensorflow as tf
 
-filename_queue = tf.train.string_input_producer(["C:\\Boyuan\\MyPython\\MNIST_Dataset\\file0.csv",
-                                                 "C:\\Boyuan\\MyPython\\MNIST_Dataset\\file1.csv"],
+filename_queue = tf.train.string_input_producer([".\\file0.csv",
+                                                 ".\\file1.csv"],
                                                 num_epochs=2)
 
 reader = tf.TextLineReader(skip_header_lines=1)
